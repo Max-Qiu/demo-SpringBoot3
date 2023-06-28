@@ -19,6 +19,7 @@
     </properties>
 
     <modules>
+        <module>demo-SpringBoot-SpringMVC</module>
     </modules>
 
     <dependencies>
