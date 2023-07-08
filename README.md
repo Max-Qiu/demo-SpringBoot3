@@ -7,4 +7,6 @@
 
 项目 | 说明
 ---|---
+demo-SpringBoot-MybatisPlus | `MybatisPlus CRUD`
 demo-SpringBoot-SpringMVC | `SpringMVC` 简单示例
+demo-SpringBoot-Validation | 表单验证

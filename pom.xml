@@ -21,6 +21,7 @@
     <modules>
         <module>demo-SpringBoot-MybatisPlus</module>
         <module>demo-SpringBoot-SpringMVC</module>
+        <module>demo-SpringBoot-Validation</module>
     </modules>
 
     <dependencies>
