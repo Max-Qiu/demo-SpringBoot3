@@ -19,6 +19,7 @@
     </properties>
 
     <modules>
+        <module>demo-SpringBoot-Cache</module>
         <module>demo-SpringBoot-MybatisPlus</module>
         <module>demo-SpringBoot-Redis</module>
         <module>demo-SpringBoot-SpringMVC</module>
