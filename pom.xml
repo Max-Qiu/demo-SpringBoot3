@@ -22,6 +22,7 @@
         <module>demo-SpringBoot-Cache</module>
         <module>demo-SpringBoot-MybatisPlus</module>
         <module>demo-SpringBoot-Redis</module>
+        <module>demo-SpringBoot-Retry</module>
         <module>demo-SpringBoot-SpringMVC</module>
         <module>demo-SpringBoot-Validation</module>
     </modules>
