@@ -1,0 +1,26 @@
+server:
+  port: 8080
+spring:
+  session:
+    timeout: 1800 # 会话超时时间，单位：秒（默认 1800 秒）
+    redis:
+      namespace: demo::session # 用于存储会话的键的命名空间（默认 spring::session）
+  # Redis相关配置
+  data:
+    redis:
+      host: redis # 地址
+      port: 6379 # 端口
+      username: # 用户名
+      password: 123 # 密码
+      database: 0 # 指定数据库序号
+      connect-timeout: 1000 # 连接超时时间（毫秒）
+      timeout: 1000 # 操作超时时间（毫秒）
+      client-name: # 客户端名称（不知道干嘛用的）
+      client-type: lettuce # 驱动类型
+      # 连接池配置
+      lettuce:
+        pool:
+          min-idle: 1 # 最小空闲连接（默认0）
+          max-idle: 8 # 最大空闲连接（默认8）
+          max-active: 16 # 最大连接数（默认8，使用负值表示没有限制）
+          max-wait: -1ms # 最大阻塞等待时间（默认-1，负数表示没限制）
