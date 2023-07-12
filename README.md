@@ -7,6 +7,7 @@
 
 项目 | 说明
 ---|---
+custom-spring-boot-starter | 自定义启动器
 demo-SpringBoot-Cache | 缓存（含 `Redis` 缓存配置）
 demo-SpringBoot-MybatisPlus | `MybatisPlus CRUD`
 demo-SpringBoot-Redis | `Redis CRUD`
