@@ -1,0 +1,6 @@
+elasticsearch:
+  hostAndPorts: # elasticsearch 连接地址，可填写多个
+    - 127.0.0.1:9200
+  username: elastic
+  password: t=Nn*1N*GlNqdKS4Z1dm
+  ca-fingerprint: 8ADC8194ADFBC5AA5006B787988F207857CB7B935EE9B5C707C6BAB84759A99C

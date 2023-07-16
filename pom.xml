@@ -21,6 +21,7 @@
     <modules>
         <module>custom-spring-boot-starter</module>
         <module>demo-SpringBoot-Cache</module>
+        <module>demo-SpringBoot-Elasticsearch</module>
         <module>demo-SpringBoot-MybatisPlus</module>
         <module>demo-SpringBoot-Redis</module>
         <module>demo-SpringBoot-Retry</module>
