@@ -9,7 +9,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 /**
- * 邮箱配置
+ * 客户端连接信息配置
  *
  * @author Max_Qiu
  */

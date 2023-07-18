@@ -9,7 +9,7 @@ import com.maxqiu.demo.properties.ElasticSearchProperties;
 import jakarta.annotation.Resource;
 
 /**
- * REST客户端是
+ * Elasticsearch客户端
  *
  * @author Max_Qiu
  */
