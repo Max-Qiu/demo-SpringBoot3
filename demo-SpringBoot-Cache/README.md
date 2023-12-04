@@ -4,7 +4,7 @@
   - Spring 5.3.28 ：https://docs.spring.io/spring-framework/docs/5.3.28/reference/html/integration.html#cache
   - Spring 6.x ： https://docs.spring.io/spring-framework/reference/integration/cache.html
 - SpringBoot
-  - SpringBoot 2.7.13 ： https://docs.spring.io/spring-boot/docs/2.7.13/reference/html/io.html#io.caching
+  - SpringBoot 2.7.18 ： https://docs.spring.io/spring-boot/docs/2.7.18/reference/html/io.html#io.caching
   - SpringBoot 3.x ： https://docs.spring.io/spring-boot/docs/current/reference/html/io.html#io.caching
 
 # Spring缓存简介
@@ -116,19 +116,19 @@ public class IndexController {
 <dependency>
     <groupId>com.alibaba.fastjson2</groupId>
     <artifactId>fastjson2</artifactId>
-    <version>2.0.34</version>
+    <version>2.0.42</version>
 </dependency>
 <!-- fastjson序列化扩展（SpringBoot3.x） -->
 <dependency>
     <groupId>com.alibaba.fastjson2</groupId>
     <artifactId>fastjson2-extension-spring6</artifactId>
-    <version>2.0.34</version>
+    <version>2.0.42</version>
 </dependency>
 <!-- fastjson序列化扩展（SpringBoot2.x） -->
 <dependency>
     <groupId>com.alibaba.fastjson2</groupId>
     <artifactId>fastjson2-extension-spring5</artifactId>
-    <version>2.0.34</version>
+    <version>2.0.42</version>
 </dependency>
 ```
 

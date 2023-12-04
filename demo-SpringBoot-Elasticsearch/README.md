@@ -1,19 +1,26 @@
-> 官方教程：[Spring Data Elasticsearch - Reference Documentation](https://docs.spring.io/spring-data/elasticsearch/docs/current/reference/html/#reference)
+> 官方教程：[Spring Data Elasticsearch - Reference Documentation](https://docs.spring.io/spring-data/elasticsearch/docs/5.1.6/reference/html/)
 
 PS：本文只是一篇极其简单的连接配置整合教程，不涉及搜索示例，建议认真阅读官方文档
 
 # 版本对应关系
 
-Spring Boot | Spring Data Elasticsearch | Elasticsearch
----|---|---
-2.4.x | 4.1.x | 7.9.3
-2.5.x | 4.2.x | 7.12.1
-2.6.x | 4.3.x | 7.15.2
-2.7.x | 4.4.x | 7.17.10 
-3.0.x | 5.0.x | 8.5.3 
-3.1.x | 5.1.x | 8.7.1 
+官方文档：[Versions](https://docs.spring.io/spring-data/elasticsearch/docs/5.1.6/reference/html/#preface.versions)
 
-本文以`Spring Boot 3.1.x`为例
+| Spring Data Release Train | Spring Data Elasticsearch | Elasticsearch | Spring Framework | Spring Boot |
+| :-----------------------: | :-----------------------: | :-----------: | :--------------: | :---------: |
+|     2023.0 (Ullmann)      |           5.1.x           |     8.7.1     |      6.0.x       |    3.1.x    |
+|      2022.0 (Turing)      |           5.0.x           |     8.5.3     |      6.0.x       |    3.0.x    |
+|       2021.2 (Raj)        |           4.4.x           |    7.17.3     |      5.3.x       |    2.7.x    |
+|        2021.1 (Q)         |           4.3.x           |    7.15.2     |      5.3.x       |    2.6.x    |
+|      2021.0 (Pascal)      |           4.2.x           |    7.12.0     |      5.3.x       |    2.5.x    |
+|      2020.0 (Ockham)      |           4.1.x           |     7.9.3     |      5.3.2       |    2.4.x    |
+|          Neumann          |           4.0.x           |     7.6.2     |      5.2.12      |    2.3.x    |
+|           Moore           |           3.2.x           |    6.8.12     |      5.2.12      |    2.2.x    |
+|         Lovelace          |           3.1.x           |     6.2.2     |      5.1.19      |    2.1.x    |
+|            Kay            |           3.0.x           |     5.5.0     |      5.0.13      |    2.0.x    |
+|          Ingalls          |           2.1.x           |     2.4.0     |      4.3.25      |    1.5.x    |
+
+本文以 `Spring Boot 3.1.x` 为例
 
 # pom.xml
 
@@ -75,7 +82,7 @@ import lombok.ToString;
 @ToString
 public class ElasticSearchProperties {
     /**
-     * 是否启用
+     * 主机地址
      */
     private String[] hostAndPorts;
 
@@ -106,7 +113,7 @@ elasticsearch:
   hostAndPorts: # elasticsearch 连接地址，可填写多个
     - 127.0.0.1:9200
   username: elastic
-  password: t=Nn*1N*GlNqdKS4Z1dm
+  password: password
   ca-fingerprint: 8ADC8194ADFBC5AA5006B787988F207857CB7B935EE9B5C707C6BAB84759A99C
 ```
 

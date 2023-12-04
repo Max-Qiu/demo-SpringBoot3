@@ -21,7 +21,7 @@ import lombok.ToString;
 @ToString
 public class ElasticSearchProperties {
     /**
-     * 是否启用
+     * 主机地址
      */
     private String[] hostAndPorts;
 
