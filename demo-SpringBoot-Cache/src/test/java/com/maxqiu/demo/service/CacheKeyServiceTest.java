@@ -80,7 +80,7 @@ class CacheKeyServiceTest {
     @Order(5)
     void multiParameter() {
         System.out.println(service.multiParameter(1, 2));
-        String s = stringRedisTemplate.opsForValue().get("myCacheName::SimpleKey [1,2]");
+        String s = stringRedisTemplate.opsForValue().get("myCacheName::SimpleKey [1, 2]");
         assertEquals("3", s);
     }
 
@@ -88,7 +88,7 @@ class CacheKeyServiceTest {
     @Order(6)
     void requestParameter2() {
         System.out.println(service.requestParameter2(new UserRequest(2, "李四"), "张"));
-        String s = stringRedisTemplate.opsForValue().get("myCacheName::SimpleKey [UserRequest(id=2, name=李四),张]");
+        String s = stringRedisTemplate.opsForValue().get("myCacheName::SimpleKey [UserRequest(id=2, name=李四), 张]");
         assertEquals("{\"@type\":\"com.maxqiu.demo.request.UserRequest\",\"id\":2,\"name\":\"李四\"}", s);
     }
 

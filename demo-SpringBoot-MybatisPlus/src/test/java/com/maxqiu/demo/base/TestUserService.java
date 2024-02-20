@@ -120,29 +120,6 @@ public class TestUserService {
     }
 
     /**
-     * 更新或保存，带条件查询
-     */
-    @Test
-    void saveOrUpdateWithWrapper() {
-        // update(entity, updateWrapper) || saveOrUpdate(entity);
-        // 先执行 update ，根据update结果执行 saveOrUpdate
-
-        // UPDATE smp_user SET age=? WHERE (age = ?)
-        // SELECT id,username,age,email FROM smp_user WHERE id=?
-        // INSERT INTO smp_user ( id, age ) VALUES ( ?, ? )
-        boolean save1 = userService.saveOrUpdate(new User().setId(2L).setAge(11), new LambdaUpdateWrapper<User>().eq(User::getAge, 18));
-        System.out.println(save1);
-        // UPDATE smp_user SET age=? WHERE (age = ?)
-        boolean save2 = userService.saveOrUpdate(new User().setId(2L).setAge(18), new LambdaUpdateWrapper<User>().eq(User::getAge, 11));
-        System.out.println(save2);
-        // UPDATE smp_user SET username=?, age=? WHERE (age = ?)
-        // SELECT id,username,age,email FROM smp_user WHERE id=?
-        // UPDATE smp_user SET age=? WHERE id=?
-        boolean save3 = userService.saveOrUpdate(new User().setId(2L).setAge(18), new LambdaUpdateWrapper<User>().eq(User::getAge, 1));
-        System.out.println(save3);
-    }
-
-    /**
      * 单条SQL批量保存
      *
      * 遇到相同ID抛出异常

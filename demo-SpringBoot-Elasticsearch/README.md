@@ -4,10 +4,11 @@ PS：本文只是一篇极其简单的连接配置整合教程，不涉及搜索
 
 # 版本对应关系
 
-官方文档：[Versions](https://docs.spring.io/spring-data/elasticsearch/docs/5.1.6/reference/html/#preface.versions)
+官方文档：[Versions](https://docs.spring.io/spring-data/elasticsearch/reference/elasticsearch/versions.html)
 
 | Spring Data Release Train | Spring Data Elasticsearch | Elasticsearch | Spring Framework | Spring Boot |
 | :-----------------------: | :-----------------------: | :-----------: | :--------------: | :---------: |
+|     2023.1 (Vaughan)      |           5.2.x           |    8.11.4     |      6.1.x       |    3.2.x    |
 |     2023.0 (Ullmann)      |           5.1.x           |     8.7.1     |      6.0.x       |    3.1.x    |
 |      2022.0 (Turing)      |           5.0.x           |     8.5.3     |      6.0.x       |    3.0.x    |
 |       2021.2 (Raj)        |           4.4.x           |    7.17.3     |      5.3.x       |    2.7.x    |
@@ -20,7 +21,7 @@ PS：本文只是一篇极其简单的连接配置整合教程，不涉及搜索
 |            Kay            |           3.0.x           |     5.5.0     |      5.0.13      |    2.0.x    |
 |          Ingalls          |           2.1.x           |     2.4.0     |      4.3.25      |    1.5.x    |
 
-本文以 `Spring Boot 3.1.x` 为例
+本文以 `Spring Boot 3.2.x` 为例
 
 # pom.xml
 

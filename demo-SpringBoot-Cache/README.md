@@ -116,19 +116,19 @@ public class IndexController {
 <dependency>
     <groupId>com.alibaba.fastjson2</groupId>
     <artifactId>fastjson2</artifactId>
-    <version>2.0.42</version>
+    <version>2.0.46</version>
 </dependency>
 <!-- fastjson序列化扩展（SpringBoot3.x） -->
 <dependency>
     <groupId>com.alibaba.fastjson2</groupId>
     <artifactId>fastjson2-extension-spring6</artifactId>
-    <version>2.0.42</version>
+    <version>2.0.46</version>
 </dependency>
 <!-- fastjson序列化扩展（SpringBoot2.x） -->
 <dependency>
     <groupId>com.alibaba.fastjson2</groupId>
     <artifactId>fastjson2-extension-spring5</artifactId>
-    <version>2.0.42</version>
+    <version>2.0.46</version>
 </dependency>
 ```
 

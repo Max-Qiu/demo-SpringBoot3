@@ -22,8 +22,8 @@
 <!-- MybatisPlus -->
 <dependency>
     <groupId>com.baomidou</groupId>
-    <artifactId>mybatis-plus-boot-starter</artifactId>
-    <version>3.5.4.1</version>
+    <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
+    <version>3.5.5</version>
 </dependency>
 <!-- 性能分析 -->
 <dependency>
