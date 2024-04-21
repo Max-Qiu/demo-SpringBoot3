@@ -6,6 +6,7 @@ import org.springframework.data.elasticsearch.client.elc.ElasticsearchConfigurat
 
 import com.maxqiu.demo.properties.ElasticSearchProperties;
 
+import co.elastic.clients.transport.TransportUtils;
 import jakarta.annotation.Resource;
 
 /**
@@ -25,7 +26,7 @@ public class ElasticsearchConfig extends ElasticsearchConfiguration {
             // 设置连接地址
             .connectedTo(properties.getHostAndPorts())
             // 启用ssl并配置CA指纹
-            .usingSsl(properties.getCaFingerprint())
+            .usingSsl(TransportUtils.sslContextFromCaFingerprint(properties.getCaFingerprint()))
             // 设置用户名密码
             .withBasicAuth(properties.getUsername(), properties.getPassword())
             // 创建连接信息
