@@ -18,11 +18,6 @@ import lombok.extern.slf4j.Slf4j;
 @RequestMapping("auth")
 @Slf4j
 public class AuthController {
-    // @GetMapping("login")
-    // public String login() {
-    // System.out.println("进入了 GET 登录方法");
-    // return "这是登录方法";
-    // }
     @Resource
     private UserService userService;
 
@@ -35,6 +30,6 @@ public class AuthController {
         } else {
             userService.create(username, password);
         }
-        return "这是 POST 登录方法";
+        return "这是 POST 注册方法";
     }
 }

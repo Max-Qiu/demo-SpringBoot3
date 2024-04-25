@@ -38,8 +38,8 @@ public class SecurityConfig {
             if (user == null) {
                 throw new UsernameNotFoundException("用户名不存在！");
             }
-            List<GrantedAuthority> auths = AuthorityUtils.createAuthorityList("admin", "user");
-            return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), auths);
+            List<GrantedAuthority> auths = AuthorityUtils.createAuthorityList();
+            return new MyUserDetails(user, auths);
         };
     }
 
@@ -121,7 +121,7 @@ public class SecurityConfig {
 
         // 配置认证
         http.authorizeHttpRequests(urlRegistry -> {
-            urlRegistry.requestMatchers("/auth/**").permitAll();
+            urlRegistry.requestMatchers("/auth/login", "/auth/register").permitAll();
             urlRegistry.requestMatchers("/**").authenticated();
         });
 
