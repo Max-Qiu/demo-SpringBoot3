@@ -26,6 +26,7 @@
         <module>demo-SpringBoot-MybatisPlus</module>
         <module>demo-SpringBoot-Quartz</module>
         <module>demo-SpringBoot-Redis</module>
+        <module>demo-SpringBoot-Redisson</module>
         <module>demo-SpringBoot-Retry</module>
         <module>demo-SpringBoot-SpringMVC</module>
         <module>demo-SpringBoot-SpringSecurity</module>
