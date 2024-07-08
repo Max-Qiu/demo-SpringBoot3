@@ -27,6 +27,8 @@
         <module>demo-SpringBoot-Quartz</module>
         <module>demo-SpringBoot-Redis</module>
         <module>demo-SpringBoot-Retry</module>
+        <module>demo-SpringBoot-RocketMQ-Consumer</module>
+        <module>demo-SpringBoot-RocketMQ-Product</module>
         <module>demo-SpringBoot-SpringMVC</module>
         <module>demo-SpringBoot-SpringSecurity</module>
         <module>demo-SpringBoot-SpringSession</module>

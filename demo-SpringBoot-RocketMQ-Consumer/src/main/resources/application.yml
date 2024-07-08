@@ -1,0 +1,7 @@
+demo:
+  rocketmq:
+    endpoints: 1.1.1.1:8080
+    access-key: ak
+    secret-key: sk
+    topic: normalTopic
+    consumer-group: normalGroup
