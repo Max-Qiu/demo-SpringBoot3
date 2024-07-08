@@ -1,0 +1,7 @@
+spring:
+  data:
+    redis:
+      host: 127.0.0.1 # 地址
+      port: 6379 # 端口
+      password: 123 # 密码
+      database: 0 # 指定数据库序号
