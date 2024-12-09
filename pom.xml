@@ -24,6 +24,7 @@
         <module>demo-SpringBoot-Cache</module>
         <module>demo-SpringBoot-Elasticsearch</module>
         <module>demo-SpringBoot-MybatisPlus</module>
+        <module>demo-SpringBoot-MybatisPlus-SnowflakeID</module>
         <module>demo-SpringBoot-Quartz</module>
         <module>demo-SpringBoot-Redis</module>
         <module>demo-SpringBoot-Redisson</module>
