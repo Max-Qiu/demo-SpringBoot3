@@ -2,6 +2,7 @@ package com.maxqiu.demo.entity;
 
 import java.io.Serializable;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
@@ -28,7 +29,7 @@ public class Demo extends Model<Demo> {
     /**
      * 主键ID
      */
-    @TableId("id")
+    @TableId(value = "id", type = IdType.ASSIGN_ID)
     private Long id;
 
     @Override
