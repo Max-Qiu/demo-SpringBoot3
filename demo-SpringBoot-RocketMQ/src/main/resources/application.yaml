@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: rmq
+
+# RocketMQ 配置
+rocketmq:
+  # NameServer 地址，多个地址用分号分隔，例如: 192.168.1.100:9876;192.168.1.101:9876
+  name-server: mq:9876
+  producer:
+    # 生产者组名
+    group: test-group
+    access-key: ak4demp57vb25b916c439b5
+    secret-key: skb9317f61528cd4be
+    send-message-timeout: 3000
+  consumer:
+    access-key: ak4demp57vb25b916c439b5
+    secret-key: skb9317f61528cd4be

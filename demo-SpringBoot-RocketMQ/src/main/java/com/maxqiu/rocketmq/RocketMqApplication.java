@@ -1,4 +1,4 @@
-package com.maxqiu.demo;
+package com.maxqiu.rocketmq;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author Max_Qiu
  */
 @SpringBootApplication
-public class RocketMqConsumerApplication {
+public class RocketMqApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RocketMqConsumerApplication.class, args);
+        SpringApplication.run(RocketMqApplication.class, args);
     }
 
 }
