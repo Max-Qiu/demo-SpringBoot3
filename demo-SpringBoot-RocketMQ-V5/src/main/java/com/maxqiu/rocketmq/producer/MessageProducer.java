@@ -71,7 +71,7 @@ public class MessageProducer {
      */
     public SendReceipt sendWithTagAndKeys(String payload, String tag, String keys) {
         // destination 格式为 "topic:tag"，框架会自动将 tag 写入消息属性
-        String destination = "test-delay-topic" + ":" + tag;
+        String destination = "test-normal-topic" + ":" + tag;
 
         Message<String> message = MessageBuilder.withPayload(payload)
             // 设置 Keys（用于消息追踪）
