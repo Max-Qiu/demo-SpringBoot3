@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: demo-SpringBoot-RocketMQ-V5
+rocketmq:
+  producer:
+    # gRPC Proxy 地址
+    endpoints: mq:8081
+    access-key: ak4demp57vb25b916c439b5
+    secret-key: skb9317f61528cd4be
+    request-timeout: 3
+    ssl-enabled: false
+  push-consumer:
+    endpoints: mq:8081
+    access-key: ak4demp57vb25b916c439b5
+    secret-key: skb9317f61528cd4be

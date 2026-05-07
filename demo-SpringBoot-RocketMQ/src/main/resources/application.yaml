@@ -1,7 +1,6 @@
 spring:
   application:
-    name: rmq
-
+    name: demo-SpringBoot-RocketMQ
 # RocketMQ 配置
 rocketmq:
   # NameServer 地址，多个地址用分号分隔，例如: 192.168.1.100:9876;192.168.1.101:9876
