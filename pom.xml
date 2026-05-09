@@ -30,6 +30,7 @@
         <module>demo-SpringBoot-Redisson</module>
         <module>demo-SpringBoot-Retry</module>
         <module>demo-SpringBoot-RocketMQ</module>
+        <module>demo-SpringBoot-RocketMQ-V5</module>
         <module>demo-SpringBoot-SpringMVC</module>
         <module>demo-SpringBoot-SpringSecurity</module>
         <module>demo-SpringBoot-SpringSession</module>
